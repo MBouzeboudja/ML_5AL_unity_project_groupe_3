@@ -77,7 +77,7 @@ public class ClionLinearClassification : MonoBehaviour
 
         Debug.Log("Start trainig");
         linear_model_train_classification(model, 0.1, 100,trainingInputs, trainingExpectedOutputs, trainingInputs.Length, trainingExpectedOutputs.Length, 2);
-        Debug.Log("Trainig finished ");
+        Debug.Log("Trainig finished");
 
         
     }
