@@ -48,7 +48,7 @@ public class ClionLinearRegression: MonoBehaviour
         Hello();
     }
 
-    public void TrainLinear()
+    public void Train()
     {
         Debug.Log("Create Model");
         CreateModel();
@@ -79,28 +79,7 @@ public class ClionLinearRegression: MonoBehaviour
         // Delete Model
     }
 
-    public void PredictLinear()
-    {
-        Debug.Log("Predict Linear");
-        if(model == IntPtr.Zero){
-            Debug.Log("Model not found or not initialized");
-            return;
-        }
-        foreach (var sphere in testSpheresTransforms)
-        {
-            var input = new double[] {sphere.position.x, sphere.position.z};
-            //var predictedY = PredictXXXLinearModel(model, input, 2)
-            Debug.Log($"inputs : {input}");
-            //Debug.Log($"predict : {linear_model_predict_regression(model, input, 2)}");
-            var predictedY = (float) linear_model_predict_regression(model, input, 2);
-            sphere.position = new Vector3(
-                sphere.position.x,
-                predictedY,
-                sphere.position.z);
-        }
-    }
-
-    public void PredictClassification()
+    public void Predict()
     {
         Debug.Log("Predict Linear");
         if(model == IntPtr.Zero){

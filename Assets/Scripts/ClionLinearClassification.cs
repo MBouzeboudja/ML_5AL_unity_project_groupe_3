@@ -82,8 +82,13 @@ public class ClionLinearClassification : MonoBehaviour
         
     }
 
-    public void PredictOnTestSpheres()
+    public void Predict()
     {
+        Debug.Log("Predict Linear");
+        if(model == IntPtr.Zero){
+            Debug.Log("Model not found or not initialized");
+            return;
+        }
         
         Debug.Log($"Model ptr {model}");
         foreach (var t in testSpheres)

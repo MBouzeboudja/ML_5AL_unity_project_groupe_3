@@ -2065,7 +2065,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 534669906}
-        m_MethodName: TrainLinear
+        m_MethodName: Train
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3214,7 +3214,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 534669907}
-        m_MethodName: PredictOnTestSpheres
+        m_MethodName: Predict
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7415,6 +7415,7 @@ MonoBehaviour:
   - {fileID: 1025586123}
   - {fileID: 25058469}
   - {fileID: 1888730299}
+  - {fileID: 1083512931}
 --- !u!114 &534669907
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7686,6 +7687,7 @@ MonoBehaviour:
   - {fileID: 1025586123}
   - {fileID: 25058469}
   - {fileID: 1888730299}
+  - {fileID: 1083512931}
   alpha: 0.1
   epoch: 1000
 --- !u!1 &556206463
@@ -10093,7 +10095,7 @@ RectTransform:
   - {fileID: 729246477}
   - {fileID: 232559149}
   m_Father: {fileID: 0}
-  m_RootOrder: 260
+  m_RootOrder: 261
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -11158,7 +11160,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 259
+  m_RootOrder: 260
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &817581694
 GameObject:
@@ -15125,12 +15127,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1083512927}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 6, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 261
+  m_RootOrder: 259
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1091056460
 GameObject:
@@ -16517,7 +16519,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 534669906}
-        m_MethodName: PredictClassification
+        m_MethodName: Predict
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
