@@ -23,8 +23,8 @@ public class ClionLinearClassification : MonoBehaviour
 
     [DllImport("ML_5AL_lib_cpp_project_groupe_3")]
     private static extern double linear_model_predict_classification(IntPtr model, double[] input, int input_qty);
-    // Start is called before the first frame update
 
+    // Start is called before the first frame update
     void Start()
     {
         Debug.Log("started");
@@ -42,17 +42,6 @@ public class ClionLinearClassification : MonoBehaviour
     public double alpha;
     
     public int epoch;
-
-    public void ReInitialize()
-    {
-        for (var i = 0; i < testSpheres.Length; i++)
-        {
-            testSpheres[i].position = new Vector3(
-                testSpheres[i].position.x,
-                0f,
-                testSpheres[i].position.z);
-        }
-    }
     
     public void CreateModel()
     {
@@ -99,6 +88,17 @@ public class ClionLinearClassification : MonoBehaviour
                 t.position.x,
                 predictedY,
                 t.position.z);
+        }
+    }
+
+    public void ReInitialize()
+    {
+        for (var i = 0; i < testSpheres.Length; i++)
+        {
+            testSpheres[i].position = new Vector3(
+                testSpheres[i].position.x,
+                0f,
+                testSpheres[i].position.z);
         }
     }
 }
